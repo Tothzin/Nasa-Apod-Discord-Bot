@@ -29,7 +29,7 @@ func main() {
 
 	defer discord.Close()
 
-	fmt.Println("NASA Apod is now running. CTRL-C to exit.")
+	fmt.Println("NASA APOD is now running. CTRL-C to exit.")
 	sc := make(chan os.Signal, 1)
 	signal.Notify(sc, syscall.SIGINT, syscall.SIGTERM, os.Interrupt, os.Kill)
 	<-sc
